@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Saporte</title>
+  <style>
+    :root {
+      --ink: #14231c;
+      --muted: #3d5348;
+      --accent: #1f6b4a;
+      --bg1: #e8f5ef;
+      --bg2: #f4f7f5;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "Source Serif 4", "Libre Baskerville", "Iowan Old Style", Georgia, serif;
+      color: var(--ink);
+      background:
+        radial-gradient(1000px 520px at 0% 0%, #b7e4c7 0%, transparent 55%),
+        radial-gradient(800px 480px at 100% 10%, #95d5b2 0%, transparent 50%),
+        linear-gradient(165deg, var(--bg1), var(--bg2));
+      display: grid;
+      place-items: center;
+      padding: 2rem;
+    }
+    main {
+      max-width: 36rem;
+      text-align: center;
+    }
+    h1 {
+      margin: 0 0 0.75rem;
+      font-size: clamp(2.75rem, 8vw, 4.5rem);
+      letter-spacing: -0.03em;
+      line-height: 1;
+    }
+    p {
+      margin: 0 0 1.75rem;
+      font-size: 1.25rem;
+      color: var(--muted);
+      font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+    }
+    a {
+      color: var(--accent);
+      font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+      font-weight: 600;
+      text-decoration: none;
+      border-bottom: 2px solid color-mix(in srgb, var(--accent) 40%, transparent);
+    }
+    a:hover { border-bottom-color: var(--accent); }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Saporte</h1>
+    <p>Managed IT</p>
+    <p><a href="mailto:andy@saporte.com">andy@saporte.com</a></p>
+  </main>
+</body>
+</html>
